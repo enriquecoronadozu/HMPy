@@ -39,8 +39,78 @@
         <div class="bodywrapper">
           <div class="body" role="main">
             
-  <div class="section" id="gesturemodel-class">
-<h1>GestureModel class!<a class="headerlink" href="#gesturemodel-class" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="module-GestureModel">
+<span id="gesturemodel-class"></span><h1>GestureModel class!<a class="headerlink" href="#module-GestureModel" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="GestureModel.GestureModel">
+<em class="property">class </em><code class="descclassname">GestureModel.</code><code class="descname">GestureModel</code><span class="sig-paren">(</span><em>name_model</em>, <em>path</em>, <em>num_samples</em>, <em>th</em>, <em>create=True</em><span class="sig-paren">)</span><a class="headerlink" href="#GestureModel.GestureModel" title="Permalink to this definition">¶</a></dt>
+<dd><p>This class is used to save the parameters of a model</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>name_model</strong> &#8211; name of the model</li>
+<li><strong>path</strong> &#8211; In which folder the model will be saved, or is saved?</li>
+<li><strong>num_samples</strong> &#8211; number of samples by model</li>
+<li><strong>th</strong> &#8211; threashold of the model</li>
+<li><strong>create</strong> &#8211; If True then the model is created (GMR + GMM), if False the the model is only defined</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>The .txt files used to create the models must be named as: <em>mod(i).txt</em></p>
+<p>Where <span class="math">\(i=\{1,..,num\_samples\}\)</span>.</p>
+<dl class="method">
+<dt id="GestureModel.GestureModel.createModel">
+<code class="descname">createModel</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#GestureModel.GestureModel.createModel" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a new model from a list of .txt files, using GMR +  GMM</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GestureModel.GestureModel.loadModel">
+<code class="descname">loadModel</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#GestureModel.GestureModel.loadModel" title="Permalink to this definition">¶</a></dt>
+<dd><p>If a model was created before, then set the parameters of the model with this function</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GestureModel.GestureModel.plotResults">
+<code class="descname">plotResults</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#GestureModel.GestureModel.plotResults" title="Permalink to this definition">¶</a></dt>
+<dd><p>Plot the results of GMR + GMM used to create the model</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="GestureModel.GestureModel.setModel">
+<code class="descname">setModel</code><span class="sig-paren">(</span><em>name</em>, <em>mean</em>, <em>sigma</em>, <em>threashold</em>, <em>weight=0.5</em><span class="sig-paren">)</span><a class="headerlink" href="#GestureModel.GestureModel.setModel" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the parameters of the model</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>name</strong> &#8211; name of the component (gravity or body)</li>
+<li><strong>mean</strong> &#8211; mean of the model</li>
+<li><strong>sigma</strong> &#8211; <span class="math">\(\sigma\)</span> of the model</li>
+<li><strong>threashold</strong> &#8211; threashold of the model</li>
+<li><strong>weight</strong> &#8211; weights of the model</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="GestureModel.GestureModel.setWeight">
+<code class="descname">setWeight</code><span class="sig-paren">(</span><em>name</em>, <em>value</em><span class="sig-paren">)</span><a class="headerlink" href="#GestureModel.GestureModel.setWeight" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the weight of the model
+:param name: name of the component (gravity or body)
+:param value: new weight value</p>
+</dd></dl>
+
+</dd></dl>
+
 </div>
 
 

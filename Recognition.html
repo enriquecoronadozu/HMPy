@@ -38,8 +38,39 @@
         <div class="bodywrapper">
           <div class="body" role="main">
             
-  <div class="section" id="recognition-class">
-<h1>Recognition class!<a class="headerlink" href="#recognition-class" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="module-Recognition">
+<span id="recognition-class"></span><h1>Recognition class!<a class="headerlink" href="#module-Recognition" title="Permalink to this headline">¶</a></h1>
+<p>&#64;See preprocessed data</p>
+<dl class="class">
+<dt id="Recognition.Recognition">
+<em class="property">class </em><code class="descclassname">Recognition.</code><code class="descname">Recognition</code><span class="sig-paren">(</span><em>list_models</em><span class="sig-paren">)</span><a class="headerlink" href="#Recognition.Recognition" title="Permalink to this definition">¶</a></dt>
+<dd><p>Class used to recognize a gesture
+:param list_models: list of GestureModel</p>
+<dl class="method">
+<dt id="Recognition.Recognition.calculate_Weights">
+<code class="descname">calculate_Weights</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Recognition.Recognition.calculate_Weights" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calculate weitghs of a list of model, using the classifier class</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Recognition.Recognition.online_classification">
+<code class="descname">online_classification</code><span class="sig-paren">(</span><em>model_number</em>, <em>x</em>, <em>y</em>, <em>z</em><span class="sig-paren">)</span><a class="headerlink" href="#Recognition.Recognition.online_classification" title="Permalink to this definition">¶</a></dt>
+<dd><p>Class used to recognize a gesture
+:param model_number: number of the model
+:param x: x data
+:param y: y pdata
+:param z: z data</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Recognition.Recognition.recognition_from_files">
+<code class="descname">recognition_from_files</code><span class="sig-paren">(</span><em>sfile</em>, <em>save=False</em>, <em>n=1</em><span class="sig-paren">)</span><a class="headerlink" href="#Recognition.Recognition.recognition_from_files" title="Permalink to this definition">¶</a></dt>
+<dd><p>Class used to recognize a gesture
+:param sfile: txt file, x y and z data separated by &#8216;,&#8217;</p>
+</dd></dl>
+
+</dd></dl>
+
 </div>
 
 
